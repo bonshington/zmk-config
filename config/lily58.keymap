@@ -23,7 +23,7 @@
                 = <&macro_press &kp RCTRL>
                 , <&macro_tap &kp SPACE>
                 , <&macro_release &kp RCTRL>
-                , <&tog QWERTY>
+                , <&macro_tap &tog QWERTY>
                 ;
         };
     };
@@ -42,7 +42,7 @@
 &kp ESC     &kp N1 &kp N2 &kp N3   &kp N4   &kp N5                     &kp N6 &kp N7   &kp N8    &kp N9  &kp N0     &kp BSLH
 &kp GRAVE   &kp Q  &kp W  &kp F    &kp P    &kp B                      &kp J  &kp L    &kp U     &kp Y   &kp MINUS  &kp EQUAL
 &kp TAB     &kp A  &kp R  &kp S    &kp T    &kp G                      &kp M  &kp N    &kp E     &kp I   &kp O      &kp SEMI
-&kp LSHFT   &kp Z  &kp X  &kp C    &kp D    &kp V  &kp LBKT     &LANG  &kp K  &kp H    &kp COMMA &kp DOT &kp FSLH   &kp APOS
+&kp LSHFT   &kp Z  &kp X  &kp C    &kp D    &kp V  &tog QWERTY  &LANG  &kp K  &kp H    &kp COMMA &kp DOT &kp FSLH   &kp APOS
             &kp LCTRL   &kp LALT    &kp LGUI    &lt FUNC ENTER       &lt FUNC SPACE   &kp BSPC    &kp LEFT    &kp RIGHT
             >;
 
