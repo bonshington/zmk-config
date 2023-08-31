@@ -30,7 +30,7 @@
     };
 
     keymap {
-        compatible = "zmk,keymap";
+        compatible = "zmk,keymap,behavior-mouse-scroll";
                                 
         eng_layer {
 // ------------------------------------------------------------------------------------------------------------
