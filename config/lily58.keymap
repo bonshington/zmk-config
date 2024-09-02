@@ -20,7 +20,7 @@
             #binding-cells = <0>;
             bindings
                 = <&macro_press &kp RCTRL>
-                , <&macro_wait_time 50>
+                , <&macro_wait_time 100>
                 , <&macro_tap &kp SPACE>
                 , <&macro_wait_time 100>
                 , <&macro_release &kp RCTRL>
@@ -81,6 +81,7 @@
 &kp RS(TAB) &kp KP_N7    &kp KP_N8  &kp KP_N9   &none       &bt BT_SEL 1                            &none       &kp LEFT    &kp DOWN    &kp RIGHT   &none       &none
 &trans      &kp RG(Z)    &kp RG(X)  &kp RG(C)   &kp RG(V)   &kp RG(V)   &kp K_MUTE   &kp RBKT    &none       &none       &none       &none       &none       &kp RG(RS(N4))
                                                 &kp CAPS  &trans  &trans    &trans   &trans    &kp DEL      &kp RG(LEFT)    &kp RG(RIGHT)
+
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
