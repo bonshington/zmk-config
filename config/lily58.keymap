@@ -21,10 +21,10 @@
             bindings
                 = <&macro_press &kp RCTRL>
                 , <&macro_wait_time 100>
-                , <&macro_tap &kp SPACE>
-                , <&macro_wait_time 100>
-                , <&macro_release &kp RCTRL>
                 , <&macro_tap &tog QWERTY>
+                , <&macro_tap &kp SPACE>
+                , <&macro_wait_time 50>
+                , <&macro_release &kp RCTRL>
                 ;
         };
     };
