@@ -19,12 +19,12 @@
 
 / {
     behaviors {
-        mmbv: MMBV {
+        mmbv: MMBV_osx {
             compatible = "zmk,behavior-mod-morph";
             label = "MOD_MORPH_B_V";
             #binding-cells = <0>;
             bindings = <&kp B>, <&kp V>;
-            mods = <MOD_RGUI|MOD_RCTRL>;
+            mods = <MOD_RGUI>;
         };
     };
 
