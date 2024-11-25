@@ -37,7 +37,7 @@
     };
 
     macros {
-        sLangM: {
+        sLangM: sLangM {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
