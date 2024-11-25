@@ -37,6 +37,18 @@
     };
 
     macros {
+        sLangM: {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp RCTRL>
+                , <&macro_wait_time 50>
+                , <&macro_tap &kp SPACE>
+                , <&macro_wait_time 50>
+                , <&macro_release &kp RCTRL>
+                ;
+        };
+
         LANGm: LANGm {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -109,7 +121,7 @@
 &kp KP_N0   &kp KP_N1    &kp KP_N2  &kp KP_N3   &kp F4      &kp F5                                          &kp F6      &kp F7      &kp F8      &kp F9      &kp F10     &kp RG(RS(N4))
 &bt BT_CLR  &kp KP_N4    &kp KP_N5  &kp KP_N6   &bt BT_SEL 0 &bt BT_SEL 1                                   &none       &kp RG(LEFT) &kp UP     &kp RG(RIGHT) &none     &trans
 &kp RS(TAB) &kp KP_N7    &kp KP_N8  &kp KP_N9   &none       &bt BT_SEL 2                                    &none       &kp LEFT    &kp DOWN    &kp RIGHT   &none       &trans
-&trans      &kp RG(Z)    &kp RG(X)  &kp RG(C)   &kp RG(V)   &kp RG(V)       &tog QWERTYm      &kp RBKT      &none       &none       &none       &none       &none       &To_Win
+&trans      &kp RG(Z)    &kp RG(X)  &kp RG(C)   &kp RG(V)   &kp RG(V)       &sLangM      &kp RBKT      &none       &none       &none       &none       &none       &To_Win
                                             &kp CAPS  &trans  &trans    &trans          &trans      &kp DEL      &kp RG(LEFT)    &kp RG(RIGHT)
             >;
         };
@@ -146,7 +158,7 @@
 &kp N0      &kp N1      &kp N2      &kp N3      &kp F4      &kp F5                                          &kp F6      &kp F7      &kp F8      &kp F9      &kp F10     &kp RG(RS(S))
 &bt BT_CLR  &kp N4      &kp N5      &kp N6      &bt BT_SEL 0 &bt BT_SEL 1                                   &none       &kp RG(LEFT) &kp UP     &kp RG(RIGHT) &none     &trans
 &kp RS(TAB) &kp N7      &kp N8      &kp N9      &none       &bt BT_SEL 2                                    &none       &kp LEFT    &kp DOWN    &kp RIGHT   &none       &trans
-&trans      &kp RG(Z)   &kp RG(X)   &kp RG(C)   &kp RG(V)   &kp RG(V)       &tog QWERTYw      &kp RBKT      &none       &none       &none       &none       &none       &To_OSX
+&trans      &kp RG(Z)   &kp RG(X)   &kp RG(C)   &kp RG(V)   &kp RG(V)       &kp GRAVE      &kp RBKT      &none       &none       &none       &none       &none       &To_OSX
                                             &kp CAPS  &trans  &trans    &trans          &trans      &kp DEL      &kp RG(LEFT)    &kp RG(RIGHT)
             >;
         };
