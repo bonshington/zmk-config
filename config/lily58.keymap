@@ -110,8 +110,8 @@
 &kp ESC     &kp N2      &kp N3      &kp N4     &kp N5       &kp N6                              &kp N7      &kp N8      &kp N9      &kp N0      &kp MINUS       &kp EQUAL
 &kp Q       &kp W       &kp E       &kp R      &kp T        &kp Y                               &kp U       &kp I       &kp O       &kp P       &kp LBKT        &kp RBKT
 &kp TAB     &kp A       &kp S       &kp D      &kp F        &kp G                               &kp H       &kp J       &kp K       &kp L       &kp SEMI        &kp APOS
-&kp LSHFT   &kp Z       &kp X       &kp C      &kp V        &mmbvG    &sLangM  &LANGm      &kp N       &kp M       &kp COMMA   &kp DOT     &kp FSLH        &kp ESC
-                                    &trans    &trans  &trans         &trans       &trans              &trans    &trans    &trans
+&kp LSHFT   &kp Z       &kp X       &kp C      &kp V        &mmbvG   &tog QWERTYm   &LangM      &kp N       &kp M       &kp COMMA   &kp DOT     &kp FSLH        &kp ESC
+                                    &trans    &trans  &trans         &trans         &trans              &trans    &trans    &trans
             >;
         };
 
@@ -121,8 +121,8 @@
 &kp KP_N0   &kp KP_N1    &kp KP_N2  &kp KP_N3   &kp F4      &kp F5                                          &kp F6      &kp F7      &kp F8      &kp F9      &kp F10     &To_Win
 &bt BT_CLR  &kp KP_N4    &kp KP_N5  &kp KP_N6   &bt BT_SEL 0 &bt BT_SEL 1                                   &none       &kp RG(LEFT) &kp UP     &kp RG(RIGHT) &none     &trans
 &kp RS(TAB) &kp KP_N7    &kp KP_N8  &kp KP_N9   &none       &bt BT_SEL 2                                    &none       &kp LEFT    &kp DOWN    &kp RIGHT   &none       &trans
-&trans      &kp RG(Z)    &kp RG(X)  &kp RG(C)   &kp RG(V)   &kp RG(V)   &tog QWERTYm      &kp RBKT      &none       &none       &none       &none       &none       &kp RG(RS(N4))
-                                            &kp CAPS  &trans  &trans    &trans          &trans      &kp DEL      &kp RG(LEFT)    &kp RG(RIGHT)
+&kp RG(RS(N4)) &kp RG(Z) &kp RG(X)  &kp RG(C)   &kp RG(V)   &kp RG(V)       &tog QWERTYm    &sLangM      &none       &none       &none       &none       &none       &kp RG(RS(N4))
+                                            &kp CAPS  &trans  &trans        &trans          &trans      &kp DEL      &kp RG(LEFT)    &kp RG(RIGHT)
             >;
         };
 
@@ -133,11 +133,11 @@
         colemakw {
             display-name = "Windows";
             bindings = <
-&kp ESC     &kp N1 &kp N2 &kp N3   &kp N4   &kp N5                                      &kp N6 &kp N7   &kp N8    &kp N9  &kp N0     &kp BSLH
-&kp GRAVE   &kp Q  &kp W  &kp F    &kp P    &kp B                                       &kp J  &kp L    &kp U     &kp Y   &kp MINUS  &kp EQUAL
-&kp TAB     &kp A  &kp R  &kp S    &kp T    &kp G                                       &kp M  &kp N    &kp E     &kp I   &kp O      &kp SEMI
-&kp LSHFT   &kp Z  &kp X  &kp C    &kp D    &kp V           &kp LBKT    &LANGw          &kp K  &kp H    &kp COMMA &kp DOT &kp FSLH   &kp APOS
-            &kp LGUI   &kp LALT    &kp LCTRL    &lt FUNCw ENTER       &lt FUNCw SPACE     &kp BSPC    &kp LEFT    &kp RIGHT
+&kp ESC     &kp N1 &kp N2 &kp N3   &kp N4   &kp N5                                          &kp N6 &kp N7   &kp N8    &kp N9  &kp N0     &kp BSLH
+&kp GRAVE   &kp Q  &kp W  &kp F    &kp P    &kp B                                           &kp J  &kp L    &kp U     &kp Y   &kp MINUS  &kp EQUAL
+&kp TAB     &kp A  &kp R  &kp S    &kp T    &kp G                                           &kp M  &kp N    &kp E     &kp I   &kp O      &kp SEMI
+&kp LSHFT   &kp Z  &kp X  &kp C    &kp D    &kp V       &kp LBKT            &LANGw          &kp K  &kp H    &kp COMMA &kp DOT &kp FSLH   &kp APOS
+            &kp LGUI   &kp LALT    &kp LCTRL            &lt FUNCw ENTER     &lt FUNCw SPACE &kp BSPC    &kp LEFT    &kp RIGHT
             >;
         };
 
@@ -147,8 +147,8 @@
 &kp ESC     &kp N2      &kp N3      &kp N4     &kp N5       &kp N6                              &kp N7      &kp N8      &kp N9      &kp N0      &kp MINUS       &kp EQUAL
 &kp Q       &kp W       &kp E       &kp R      &kp T        &kp Y                               &kp U       &kp I       &kp O       &kp P       &kp LBKT        &kp RBKT
 &kp TAB     &kp A       &kp S       &kp D      &kp F        &kp G                               &kp H       &kp J       &kp K       &kp L       &kp SEMI        &kp APOS
-&kp LSHFT   &kp Z       &kp X       &kp C      &kp V        &mmbvC    &kp GRAVE  &LANGw      &kp N       &kp M       &kp COMMA   &kp DOT     &kp FSLH        &kp GRAVE
-                                &trans    &trans  &trans             &trans       &trans            &trans    &trans    &trans
+&kp LSHFT   &kp Z       &kp X       &kp C      &kp V        &mmbvC    &kp GRAVE    &tog QWERTYw &kp N       &kp M       &kp COMMA   &kp DOT     &kp FSLH        &kp GRAVE
+                                &trans    &trans  &trans              &trans       &trans       &trans    &trans    &trans
             >;
         };
 
@@ -158,8 +158,8 @@
 &kp N0      &kp N1      &kp N2      &kp N3      &kp F4      &kp F5                                          &kp F6      &kp F7      &kp F8      &kp F9      &kp F10     &To_OSX
 &bt BT_CLR  &kp N4      &kp N5      &kp N6      &bt BT_SEL 0 &bt BT_SEL 1                                   &none       &kp RG(LEFT) &kp UP     &kp RG(RIGHT) &none     &trans
 &kp RS(TAB) &kp N7      &kp N8      &kp N9      &none       &bt BT_SEL 2                                    &none       &kp LEFT    &kp DOWN    &kp RIGHT   &none       &trans
-&trans      &kp RG(Z)   &kp RG(X)   &kp RG(C)   &kp RG(V)   &kp RG(V)   &tog QWERTYw    &kp RBKT      &none       &none       &none       &none       &none       &kp RG(RS(S))
-                                            &kp CAPS  &trans  &trans    &trans          &trans      &kp DEL      &kp RG(LEFT)    &kp RG(RIGHT)
+&kp RG(RS(S)) &kp RG(Z) &kp RG(X)   &kp RG(C)   &kp RG(V)   &kp RG(V)       &kp GRAVE       &tog QWERTYw    &none       &none       &none       &none       &none       &kp RG(RS(S))
+                                            &kp CAPS  &trans  &trans        &trans          &trans          &kp DEL      &kp RG(LEFT)    &kp RG(RIGHT)
             >;
         };
     };
