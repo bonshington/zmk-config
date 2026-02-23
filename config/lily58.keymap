@@ -41,11 +41,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RCTRL>
-                , <&macro_wait_time 50>
-                , <&macro_tap &kp SPACE>
-                , <&macro_wait_time 50>
-                , <&macro_release &kp RCTRL>
+                = <&macro_press &kp RC(SPACE)>
                 ;
         };
 
@@ -53,12 +49,8 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RCTRL>
+                = <&macro_press &kp RC(SPACE)>
                 , <&macro_tap &tog QWERTYm>
-                , <&macro_wait_time 50>
-                , <&macro_tap &kp SPACE>
-                , <&macro_wait_time 50>
-                , <&macro_release &kp RCTRL>
                 ;
         };
 
