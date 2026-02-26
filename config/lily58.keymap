@@ -43,6 +43,7 @@
             bindings
                 = <&macro_press &kp RCTRL>
                 , <&macro_tap &kp SPACE>
+                , <&macro_wait_time 100>
                 , <&macro_release &kp RCTRL>
                 ;
         };
@@ -53,6 +54,7 @@
             bindings
                 = <&macro_press &kp RCTRL>
                 , <&macro_tap &kp SPACE>
+                , <&macro_wait_time 100>
                 , <&macro_release &kp RCTRL>
                 , <&macro_tap &tog QWERTYm>
                 ;
