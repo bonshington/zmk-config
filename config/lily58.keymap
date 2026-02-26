@@ -41,7 +41,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RC(SPACE)>
+                = <&macro_press &kp GLOBE>
                 ;
         };
 
@@ -49,7 +49,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RC(SPACE)>
+                = <&macro_press &kp GLOBE>
                 , <&macro_tap &tog QWERTYm>
                 ;
         };
